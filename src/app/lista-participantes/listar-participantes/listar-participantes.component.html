@@ -1,0 +1,25 @@
+<ion-card *ngIf="var_part" [id]="var_part.ID">
+  <img [src]="var_part.foto" />
+  <ion-card-header>
+    <ion-card-title>
+      {{ var_part.Nombre }}
+      {{ var_part.Apellido }}
+    </ion-card-title>
+    <ion-card-subtitle>
+      {{ var_part.Descripcion }}
+    </ion-card-subtitle>
+    <br />
+
+    <ion-card-subtitle> Actividad:{{ var_part.Actividad }} </ion-card-subtitle>
+    <ion-card-subtitle>
+      {{ var_part.Hora_entrada }} - {{ var_part.Hora_salida }}
+    </ion-card-subtitle>
+    <ion-card-subtitle>
+      Clasificación:{{ var_part.Clasificacion }}
+    </ion-card-subtitle>
+    <ion-card-subtitle> Estado: {{ var_part.Estado }} </ion-card-subtitle>
+
+    <a>Cambiar a Verde</a>
+    <a>Cambiar a Rojo</a>
+  </ion-card-header>
+</ion-card>

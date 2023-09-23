@@ -1,0 +1,34 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title style="text-align: center;">Menú principal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-label>
+            <a routerLink="/lista-participantes" style="text-decoration: none; color: aliceblue;">Lista de participantes</a>
+          </ion-label>
+        </ion-item>
+        <ion-footer class="flex-container">
+          <ion-toolbar>
+            <a routerLink="/home" style="text-decoration: none; color:brown" >Salir</a>
+        </ion-toolbar>
+          
+        </ion-footer>
+        
+      </ion-menu-toggle>
+
+     
+     
+    
+      
+
+      
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

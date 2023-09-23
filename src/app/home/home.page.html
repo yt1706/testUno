@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-col col-12 width-50 text-center>
+          <img
+            alt="Silhouette of mountains"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66RHwUtXuNkUlRfqbFySHq9_j5f4QtT8XNhyd-kQt_ORMYA-Wpz-ICp3nYKTssRd6-R0"
+            style="height: auto; max-width: 23vh"
+            class="login"
+          />
+        </ion-col>
+
+        <ion-card-header>
+          <ion-card-title style="text-align: center">BIENVENIDO</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-card>
+    <ion-row>
+      <ion-col>
+        <ion-card-title>Nombre de Usuario</ion-card-title>
+        <ion-item>
+          <ion-input fill="outline" placeholder=""></ion-input>
+        </ion-item>
+        <ion-card-subtitle>Ingrese su nombre de usuario aquí</ion-card-subtitle>
+        <br />
+        <ion-card-title>Contraseña</ion-card-title>
+        <ion-item>
+          <ion-input
+            fill="outline"
+            placeholder=""
+            type="password"
+            value=""
+          ></ion-input>
+        </ion-item>
+        <ion-card-subtitle>Ingrese su contraseña aquí</ion-card-subtitle>
+      </ion-col>
+    </ion-row>
+    <br />
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" routerLink="/lista-participantes">
+          Iniciar sesión
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
